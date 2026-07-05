@@ -24,9 +24,6 @@
           "GRAD" 0,
           "opsz" 24;
       }
-      .hero-clip {
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      }
       .glass-card {
         background: rgba(18, 20, 20, 0.7);
         backdrop-filter: blur(10px);
@@ -102,7 +99,58 @@
       </div>
     </nav>
 
-    <main class="flex-grow"></main>
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="relative min-h-[819px] flex items-center justify-center">
+        <!--Background Image-->
+        <div class="absolute inset-0 z-0">
+          <img
+            alt="Trang thiết bị phòng gym hiện đại"
+            class="w-full h-full object-cover object-center opacity-40"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhOA_8Sxckm_XeaKrsPZFZ_mqij9BHw1Y3yxClth7VOvxzOzsEUz87YJITcJexhKKKUoRK9rc_f8FErbiZrRbk1gsykvHLa5CGtboWwOBFUK8OdWor3zcBBdXVhEUDZf6RA0ZAGcBwyPk0rIolSXgT80qP7jnwkfhjMjIj2JOH_7fLDY06NvelwFhSRr8KnT2erkXHexJwM7UDivSq8yrIoM4L47LfwEhja7Fh0hfCmshtIaGcF0dnMLSZVMaDZu_ns4wI4b9J_Xwq"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"
+          ></div>
+        </div>
+
+        <div
+          class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-20 pb-32"
+        >
+          <span
+            class="inline-block px-4 py-1 border border-primary/30 rounded-full font-label-md text-label-md text-primary mb-6 uppercase tracking-widest bg-primary/10"
+            >Trải nghiệm đẳng cấp</span
+          >
+          <h1
+            class="font-display-lg text-headline-lg-mobile md:text-display-lg text-secondary mb-6 max-w-4xl mx-auto uppercase"
+          >
+            KHAI PHÁ TIỀM NĂNG
+            <span class="text-secondary-container">ĐỈNH CAO</span> CỦA BẠN
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10"
+          >
+            Gia nhập câu lạc bộ thể hình cao cấp nhất. Môi trường luyện tập
+            chuyên nghiệp, thiết bị hiện đại và huấn luyện viên cá nhân tận tâm
+            giúp bạn đạt được kết quả vượt mong đợi.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <button
+              class="w-full sm:w-auto bg-secondary-container text-on-secondary-container px-8 py-4 rounded font-label-md text-label-md uppercase tracking-wider hover:bg-secondary-fixed-dim transition-colors shadow-[0_0_20px_rgba(195,244,0,0.3)]"
+            >
+              Đăng Ký Thành Viên
+            </button>
+            <button
+              class="w-full sm:w-auto bg-transparent border border-primary text-primary px-8 py-4 rounded font-label-md text-label-md uppercase tracking-wider hover:bg-primary/10 transition-colors"
+            >
+              Đặt Lịch Tham Quan
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="Menu.js"></script>
   </body>
 </html>

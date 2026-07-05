@@ -1,0 +1,324 @@
+<!-- Lịch Học & Bộ Môn - FitLife Premium -->
+<!doctype html>
+<html class="dark" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FITLIFE - Lịch Học &amp; Lớp Học</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="./tailwind.config.js"></script>
+    <style>
+      .material-symbols-outlined {
+        font-family: "Material Symbols Outlined";
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"
+  >
+    <!-- TopNavBar Component -->
+    <nav
+      class="bg-surface dark:bg-surface border-b border-surface-variant dark:border-surface-variant shadow-md dark:shadow-none sticky full-width top-0 z-50"
+    >
+      <div
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+      >
+        <!-- Brand -->
+        <a
+          class="font-headline-md text-headline-md font-bold tracking-tighter text-primary dark:text-primary"
+          href="index.html"
+        >
+          FITLIFE
+        </a>
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200"
+            href="index.html"
+            >Home</a
+          >
+          <!-- Active State -->
+          <a
+            class="font-label-md text-label-md text-primary dark:text-primary font-bold border-b-2 border-primary pb-1"
+            href="classes.html"
+            >Classes</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200"
+            href="contact.html"
+            >Contact</a
+          >
+        </div>
+        <!-- Trailing Actions -->
+        <div class="flex items-center gap-4">
+          <button
+            class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-DEFAULT uppercase tracking-wider font-bold scale-95 active:scale-90 transition-transform"
+          >
+            JOIN NOW
+          </button>
+          <button
+            aria-label="Account"
+            class="text-secondary dark:text-secondary hover:text-primary dark:hover:text-primary transition-colors duration-200"
+          >
+            <span class="material-symbols-outlined" data-icon="account_circle"
+              >account_circle</span
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section
+        class="relative w-full h-[614px] min-h-[400px] flex items-end pb-margin-desktop px-margin-mobile md:px-margin-desktop bg-surface-dim"
+      >
+        <div class="absolute inset-0 overflow-hidden">
+          <img
+            alt="High action fitness photography"
+            class="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeGDLw0NeB6IDobH_RcCLG8hw9JA4xhJbUl8zt3whAMHp6qS4Gmp8lCRrMoPdip6LTWHzlDhcTU8sUmjX4wvNKWG1ynELhWAaFaE-IHtVUuZHZmNVZ41MXGkT8yrzo0YyBte0VCMC5QFZuRqikBRJNoQ8ukFfP_yi5Orufvqi6aJQ2C9ZCwztK9NciesXFQp183xbo9h2UgqHETNpZpH6Z414vuKQCC633tBtSLReDB6EoJno73b2axxx8xC8OZFl0mrm5Z0d7H-N5"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"
+          ></div>
+        </div>
+        <div class="relative z-10 w-full max-w-container-max mx-auto">
+          <span
+            class="inline-block px-3 py-1 border border-outline-variant rounded-DEFAULT font-label-md text-label-md text-primary uppercase mb-4 tracking-widest"
+          >
+            Chương Trình Huấn Luyện
+          </span>
+          <h1
+            class="font-display-lg text-display-lg text-on-surface mb-6 max-w-3xl"
+          >
+            KHÁM PHÁ SỨC MẠNH<br /><span class="text-primary">TIỀM ẨN</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Trải nghiệm các bộ môn đa dạng từ tĩnh lặng đến bùng nổ, được dẫn
+            dắt bởi những chuyên gia hàng đầu trong không gian chuẩn 5 sao.
+          </p>
+        </div>
+      </section>
+      <!-- Disciplines Section (Bento Grid) -->
+      <section
+        class="py-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+      >
+        <div class="flex justify-between items-end mb-12">
+          <div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">
+              CÁC BỘ MÔN
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Nền tảng cho mọi mục tiêu thể hình.
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-unit md:gap-4 lg:gap-6 auto-rows-[250px] md:auto-rows-[300px]"
+        >
+          <!-- Gym/Strength (Large Hero) -->
+          <div
+            class="md:col-span-8 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer border border-surface-variant"
+          >
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO_WE7PEabkgufRLj6CSaU_WUtY-bvEWIRfZefJfnSHgw7OBVSLjao-tJeMxYU99OEhoyYw7fL8e9bvqyT0fWi19BJlgqcTF1-pVUAIEicaLIVYo7zmObA2o7Hz8oACugtbbS22_WJecQSRkJ7vrbhECBWBORnhdFhSa_OtzfQUjRmiF9MO8gkWhoCDrGkZ1Axsmd3D4moNiMdj7Ue4aL7g-jfkv33VfyybqP3cQB1xWiNvs64YR4k5nWJtU32a0wbLsyuQ1wl2Yje"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"
+            ></div>
+            <div
+              class="absolute inset-x-0 bottom-0 p-8 backdrop-blur-sm bg-surface-dim/30 border-t border-surface-variant/50"
+            >
+              <div class="flex items-center justify-between">
+                <div>
+                  <span
+                    class="px-2 py-1 bg-surface/80 border border-outline-variant rounded-DEFAULT font-label-md text-[10px] text-secondary-fixed uppercase tracking-wider mb-2 inline-block"
+                    >Pro Level</span
+                  >
+                  <h3 class="font-headline-md text-headline-md text-on-surface">
+                    GYM &amp; ĐẨY TẠ
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-1 hidden md:block"
+                  >
+                    Thiết bị tối tân, không gian rộng rãi chuyên biệt cho sức
+                    mạnh.
+                  </p>
+                </div>
+                <div
+                  class="w-12 h-12 rounded-full border border-primary/50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="arrow_forward"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Yoga -->
+          <div
+            class="md:col-span-4 relative rounded-lg overflow-hidden group cursor-pointer border border-surface-variant"
+          >
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-50"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAMhJh-kpSRqyGLd0IL77gxGvmIBKje5O-5HyEHwnGe1IcjUp4YP84aei83S_5b11ABXsQHJL1TNb0N5nhDvpBNnXzJzYvvzVOTqK7MCMrw8kmmo4wQVy8xP6fefbK1IoMQvRTHEHL4KgKjb_TB7ZeRgoitH1NVyzYo56Z0bLy_HdMOrqOU3Wl4X-c_feyr1P8eZ83xL_WK_PJLgr5aBHfubSnugABjna2hbMEQzDGspyidAkucz3z1l74EQmRtRei46fvCwPUW6k9"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"
+            ></div>
+            <div class="absolute inset-x-0 bottom-0 p-6">
+              <h3 class="font-headline-md text-[20px] text-on-surface">YOGA</h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-1 text-sm line-clamp-2"
+              >
+                Phục hồi cơ thể và tâm trí với các lớp Vinyasa và Hatha cao cấp.
+              </p>
+            </div>
+          </div>
+          <!-- Pilates -->
+          <div
+            class="md:col-span-4 relative rounded-lg overflow-hidden group cursor-pointer border border-surface-variant"
+          >
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-50"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAduoCnejSl-NJGekpuSZYW9UpjT8sWBAp20g_AZX7_1_76bzqOESQtJWzAPMH7eHKZuCMZQ7mpxSE2bJlqJSbxwTFxm7aaTD9IV-YiZK2vTINroogDUN5MvDSBAFVGIhJNdcDcu3xdTc-9S4J5pRBHxvqC0JPpMMHD9y8z5VLWh9jxgDACczAbdeOmikQWvOZjx9Zneq4xsJzVHHWe3FE8DO9OdlXzrflu1edaprsoKRhKpNaAMAS-n3cXibJ7TE-WPfZRINwbgTB-"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"
+            ></div>
+            <div class="absolute inset-x-0 bottom-0 p-6">
+              <span
+                class="px-2 py-1 bg-surface/80 border border-outline-variant rounded-DEFAULT font-label-md text-[10px] text-primary-container uppercase tracking-wider mb-2 inline-block"
+                >Exclusive</span
+              >
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                PILATES
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-1 text-sm line-clamp-2"
+              >
+                Kiểm soát cơ lõi và linh hoạt với thiết bị Reformer hiện đại.
+              </p>
+            </div>
+          </div>
+          <!-- Zumba -->
+          <div
+            class="md:col-span-12 relative rounded-lg overflow-hidden group cursor-pointer border border-surface-variant"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-surface-dim to-surface z-10 opacity-90"
+            ></div>
+            <div
+              class="relative z-20 flex flex-col md:flex-row items-center justify-between h-full p-8 md:p-12"
+            >
+              <div class="max-w-xl">
+                <h3 class="font-display-lg text-[40px] text-on-surface mb-2">
+                  ZUMBA ENERGY
+                </h3>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant mb-6"
+                >
+                  Giải phóng năng lượng tối đa với nhịp điệu Latin cuồng nhiệt.
+                  Đốt cháy 600 calories mỗi giờ.
+                </p>
+                <button
+                  class="bg-transparent border border-primary text-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT uppercase tracking-wider hover:bg-primary/10 transition-colors inline-flex items-center gap-2"
+                >
+                  Khám Phá Thêm
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="arrow_outward"
+                    >arrow_outward</span
+                  >
+                </button>
+              </div>
+              <div
+                class="mt-8 md:mt-0 relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-surface-variant"
+              >
+                <img
+                  class="w-full h-full object-cover opacity-80"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgMGZjxwwKHNzHXs7qcVDf6WrSA34UTD2OM2fFVj42WydcrNE0h8jmwFiJL9RTP522J041UAAxwH6BqKLQ0nwUe68yynM33ROyPfCwVjs0z0wjaMN1wA2pLMTlYyC2-JyfZCmrHhQc9_5WqjxPFuWg25c7SyafXYhn6-Qv6ivckzA8w2FWjg4__d3iqvFHN3k43KtkE7nYw2b200ooiaLlLy6mt8TsG6ZgqG_75PjpVK_u4OiX1Gk0CnbiTJOXDGGsK49Xp4nwZUJU"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Component -->
+    <footer
+      class="bg-surface-container-low dark:bg-surface-container-low border-t border-surface-variant dark:border-surface-variant full-width mt-auto"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-8 md:gap-0"
+      >
+        <!-- Brand & Copyright -->
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left gap-4"
+        >
+          <span
+            class="font-headline-md text-headline-md font-bold text-primary dark:text-primary tracking-tighter"
+          >
+            FITLIFE
+          </span>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant text-sm"
+          >
+            © 2024 FITLIFE PREMIUM FITNESS CLUB. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+        <!-- Links -->
+        <div
+          class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4"
+        >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+            href="#"
+            >Membership Rules</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+            href="#"
+            >Careers</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
